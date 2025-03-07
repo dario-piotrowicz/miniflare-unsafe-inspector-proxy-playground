@@ -11,15 +11,14 @@ const mf = new Miniflare({
             compatibilityDate: "2025-01-21",
             serviceBindings: {
                 "WORKER_B": 'worker-b'
-            }
+            },
+            unsafeInspectorProxy: true,
         },
         {
             name: 'worker-b',
             scriptPath: './worker-b.js',
             modules: true,
             compatibilityDate: "2025-01-21",
-            // unsafeInspectorProxy can be set to false on individual workers to prevent them from being proxied
-            unsafeInspectorProxy: false,
             serviceBindings: {
                 "WORKER_C": 'worker-c'
             }
@@ -29,6 +28,7 @@ const mf = new Miniflare({
             scriptPath: './worker-c.js',
             modules: true,
             compatibilityDate: "2025-01-21",
+            unsafeInspectorProxy: true,
         },
     ],
 });

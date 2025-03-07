@@ -11,13 +11,15 @@ const mf = new Miniflare({
             compatibilityDate: "2025-01-21",
             serviceBindings: {
                 "WORKER_B": 'worker-b'
-            }
+            },
+            unsafeInspectorProxy: true,
         },
         {
             name: 'worker-b',
             scriptPath: './worker-b.js',
             modules: true,
             compatibilityDate: "2025-01-21",
+            unsafeInspectorProxy: true,
         },
     ],
 });
