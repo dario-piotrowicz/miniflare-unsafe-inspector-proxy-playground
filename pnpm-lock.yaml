@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  miniflare: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13719635965/npm-package-miniflare-8357
+  miniflare: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13720976382/npm-package-miniflare-8357
 
 importers:
 
@@ -14,14 +14,20 @@ importers:
   apps/multi-worker:
     dependencies:
       miniflare:
-        specifier: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13719635965/npm-package-miniflare-8357
-        version: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13719635965/npm-package-miniflare-8357
+        specifier: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13720976382/npm-package-miniflare-8357
+        version: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13720976382/npm-package-miniflare-8357
+
+  apps/multi-worker-with-filtering:
+    dependencies:
+      miniflare:
+        specifier: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13720976382/npm-package-miniflare-8357
+        version: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13720976382/npm-package-miniflare-8357
 
   apps/single-worker:
     dependencies:
       miniflare:
-        specifier: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13719635965/npm-package-miniflare-8357
-        version: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13719635965/npm-package-miniflare-8357
+        specifier: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13720976382/npm-package-miniflare-8357
+        version: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13720976382/npm-package-miniflare-8357
 
 packages:
 
@@ -102,9 +108,9 @@ packages:
   glob-to-regexp@0.4.1:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
 
-  miniflare@https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13719635965/npm-package-miniflare-8357:
-    resolution: {tarball: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13719635965/npm-package-miniflare-8357}
-    version: 0.0.0-vc112b0866
+  miniflare@https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13720976382/npm-package-miniflare-8357:
+    resolution: {tarball: https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13720976382/npm-package-miniflare-8357}
+    version: 0.0.0-v7eda8543c
     engines: {node: '>=16.13'}
     hasBin: true
 
@@ -206,7 +212,7 @@ snapshots:
 
   glob-to-regexp@0.4.1: {}
 
-  miniflare@https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13719635965/npm-package-miniflare-8357:
+  miniflare@https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/13720976382/npm-package-miniflare-8357:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       acorn: 8.14.0
