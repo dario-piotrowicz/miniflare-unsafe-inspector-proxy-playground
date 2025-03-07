@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+overrides:
+  miniflare: /Users/dario/Repos/workers-sdk/packages/miniflare
+
+importers:
+
+  .: {}
+
+  apps/multi-worker:
+    dependencies:
+      miniflare:
+        specifier: /Users/dario/Repos/workers-sdk/packages/miniflare
+        version: link:../../../../Repos/workers-sdk/packages/miniflare
+
+  apps/single-worker:
+    dependencies:
+      miniflare:
+        specifier: /Users/dario/Repos/workers-sdk/packages/miniflare
+        version: link:../../../../Repos/workers-sdk/packages/miniflare

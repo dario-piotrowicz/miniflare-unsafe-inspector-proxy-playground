@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "WorkerA",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "websocketAddress": "ws://localhost:9229/worker-a",
+            "cwd": "/",
+            "resolveSourceMapLocations": null,
+            "attachExistingChildren": false,
+            "autoAttachChildProcesses": false,
+            "sourceMaps": true,
+        },
+        {
+            "name": "WorkerB",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "websocketAddress": "ws://localhost:9229/worker-b",
+            "cwd": "/",
+            "resolveSourceMapLocations": null,
+            "attachExistingChildren": false,
+            "autoAttachChildProcesses": false,
+            "sourceMaps": true,
+        },
+    ],
+    "compounds": [
+        {
+          "name": "All Workers",
+          "configurations": ["WorkerA", "WorkerB"],
+          "stopAll": true
+        }
+      ]
+}
