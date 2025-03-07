@@ -1,5 +1,5 @@
 {
-  "name": "miniflare-multi-worker-inspector-debugger-playground",
+  "name": "multi-worker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "miniflare": "/Users/dario/Repos/workers-sdk/packages/miniflare"
+    "miniflare": "^3.20250224.0"
   }
 }
