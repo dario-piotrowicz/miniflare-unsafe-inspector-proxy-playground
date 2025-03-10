@@ -8,6 +8,7 @@ const mf = new Miniflare({
             scriptPath: './worker.js',
             modules: true,
             compatibilityDate: "2025-01-21",
+            unsafeInspectorProxy: true,
         },
     ],
 });
